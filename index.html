@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/icon.png">
+</head>
+
+<body>
+    <section class="home">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/icon.png" alt="" width="100">
+            </div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Sign in</a>
+            </div>
+        </div>
+        <div class="search">
+            <div class="searchCity">
+                <input type="text" placeholder="Enter a city name....." name="" id="search">
+                <button onclick="getInfo()">Search</button>
+            </div>
+            <div class="location">
+                <img src="./images/location-outline.svg" width="20px" alt="">
+                <p id="cityName">City Name</p>
+            </div>
+            <div class="weatherInfo">
+                <h1><span id="temp">0</span><sup> o</sup>C</h1>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy;2023 Aasif Qadir! All Rights Reserved</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
